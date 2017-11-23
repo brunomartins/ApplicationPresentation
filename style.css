@@ -29,3 +29,31 @@ body {
 h1 {
 	font-size: 64px;
 }
+
+
+.impress-enabled .step {
+    margin: 0;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.slide {
+    display: block;
+    width: 900px;
+    padding: 40px 60px;
+}
+
+.slide img {
+	width: 800px;
+}
+
+.title {
+	color: #48efff;
+}
+
+/* fade out inactive slides */
+.step:not(.active) { opacity: 0.3; }
+.step.hide:not(.active) { opacity: 0; }
